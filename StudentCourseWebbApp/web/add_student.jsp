@@ -13,7 +13,7 @@
     </head>
     <body>
         <h1>Add Student</h1>
-        <form action="AddStudentsServlet.do" method="POST">
+        <form action="AddStudentsServlet.do" method="GET">
             <table>
                
                 <tr>
