@@ -23,22 +23,22 @@ public class AddStudentsServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        Long id = Long.parseLong(request.getParameter("id"));
+       
         String name = request.getParameter("name");
         String email = request.getParameter("email");
         String courseName = request.getParameter("course");
         String courseCode = request.getParameter("code");
         
-        Student student = creatStudent(id,name,email,courseName,courseCode);
+        Student student = creatStudent(name,email,courseName,courseCode);
         sfl.create(student);
         
         RequestDispatcher disp = request.getRequestDispatcher("add_student_outcome.jsp");
   
     }
 
-    private Student creatStudent(Long id, String name, String email, String courseName, String courseCode) {
+    private Student creatStudent(String name, String email, String courseName, String courseCode) {
         Student student = new Student();
-        student.setId(id);
+        
         student.setName(name);
         student.setEmail(email);
         student.setCourseName(courseName);
