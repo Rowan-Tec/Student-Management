@@ -47,7 +47,7 @@
             
         </table>
             <ul>
-                <li><a href="mune.jsp">MENU</a></li>
+                <li><a href="menu.jsp">MENU</a></li>
             </ul>
     </body>
 </html>
